@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookDetailsFragment">
+
+    <LinearLayout
+        android:layout_width="486dp"
+        android:layout_height="233dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="107dp"
+                android:layout_height="match_parent"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/authorTextView"
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/coverImageView"
+                android:layout_width="284dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/play_button"
+                android:layout_width="145dp"
+                android:layout_height="61dp"
+                android:text="@string/play" />
+
+            <Button
+                android:id="@+id/pause_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/pause" />
+
+            <Button
+                android:id="@+id/stop__button"
+                android:layout_width="187dp"
+                android:layout_height="match_parent"
+                android:text="@string/stop" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/music_progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            app:layout_constraintBottom_toTopOf="@+id/titleTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/current_playing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="current playing: " />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

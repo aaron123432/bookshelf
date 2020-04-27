@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">bookshelf</string>
+    <string name="search_error_message">No results matched your search</string>
+    <string name="form_search_button">Search</string>
+    <string name="play">Play</string>
+    <string name="todo">TODO</string>
+    <string name="pause">pause</string>
+    <string name="stop">Stop</string>
+</resources>
